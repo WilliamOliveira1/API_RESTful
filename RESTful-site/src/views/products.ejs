@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>E-commerce - William Oliveira</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+    </head>
+    <body class="container">
+        <div class="container">
+            <table class="table table-striped">
+              <thead class="thead-dark">
+                <tr>
+                  <th>Produto</th>
+                  <th>Preço</th>
+                  <th>&nbsp;</th>
+                </tr>
+              </thead>
+              <tbody>
+                <% products.forEach(function(product) { %>
+                <tr>
+                  <td><%= product.attributes.name %></td>
+                  <td>R$ <%= product.attributes.price %>,00</td>
+                  <td><a class="btn-excluir" href="http://localhost:3000<%= product.links.self %>">Excluir</a></td>
+                </tr>
+                <% }) %>
+              </tbody>
+            </table>
+          </div>
+    </body>
+    <script type="text/javascript" src="js/app.js"></script>
+</html>
