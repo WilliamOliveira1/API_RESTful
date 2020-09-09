@@ -1,6 +1,6 @@
 # API_RESTful
 
-## Projeto de webb app com API RESTful
+## Projeto de web com API RESTful
 
 **Foi usado dois módulos de rotas:** 
 
