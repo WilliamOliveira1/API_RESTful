@@ -16,7 +16,7 @@
 
 *a função do nodemon é de não precisar toda vez dar reset no servidor para visualizar mudançar realizadas no código*
 
-**Após instalar o nodemon no package.json dentro de scripts criar a linha:**
+**Após instalar o nodemon, no package.json dentro de scripts criar a linha:**
 ```
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
